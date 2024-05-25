@@ -7,17 +7,18 @@ import { FaThumbsUp, FaThumbsDown } from "react-icons/fa"
 
 
 export default function Home() {
-  const [rating, setRating] = useState(null)
-  const [hover, setHover] = useState(null)
+  const [rating, setRating] = useState(null);
+  const [hover, setHover] = useState(null);
 
-  const [rating1, setRating1] = useState(null)
-  const [hover1, setHover1] = useState(null)
+  const [rating1, setRating1] = useState(null);
+  const [hover1, setHover1] = useState(null);
 
   const [thumbsUp, setThumbsUp] = useState(false);
   const [thumbsDown, setThumbsDown] = useState(false);
 
 
   const handleThumbsUpClick = () => {
+    console.log("function_called")
     setThumbsUp(!thumbsUp);
     if (thumbsDown) setThumbsDown(false);
   };
